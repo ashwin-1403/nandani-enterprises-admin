@@ -1,0 +1,149 @@
+.profileInfoSec {
+  margin-top: 50px;
+  .profileInfoHeading {
+    position: relative;
+    h3 {
+      color: #00c2ff;
+      font-size: 20px;
+      font-family: Outfit;
+      font-weight: 500;
+      margin-bottom: 20px;
+      &:before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 0.5px;
+        background: #bbbbbb;
+        right: 0;
+        top: 50%;
+        position: absolute;
+      }
+      span {
+        background-color: #fff;
+        position: relative;
+        padding-right: 10px;
+      }
+    }
+  }
+  .groupInfo {
+    margin-bottom: 20px;
+    label {
+      color: #7d7d7d;
+      font-size: 12px;
+      font-family: Outfit;
+      font-weight: 400;
+    }
+    .employeInfoInput {
+      border: 1px solid #bbbbbb;
+      color: #000;
+      border-radius: 0;
+      margin: 10px 0;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+  .generateQrDiv {
+    .generateQRBtn {
+      color: #00c2ff;
+      height: 50px;
+      font-size: 20px;
+      font-family: Outfit;
+      font-weight: 500;
+      padding: 0px 42px;
+      margin-bottom: 80px;
+      margin-top: 58px;
+      border: 1px solid #00c2ff;
+      border-radius: 3px;
+      background-color: #fff;
+    }
+  }
+}
+
+.addStationHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h2 {
+    color: #00c2ff;
+    font-size: 34px;
+    font-family: Poppins;
+    font-weight: 400;
+    margin: 0;
+  }
+  img {
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+  .editBtn {
+    button {
+      border: 0;
+      border-radius: 3px;
+      font-size: 24px;
+      background-color: #00c2ff;
+      color: #fff;
+      font-size: 22px;
+      font-family: Poppins;
+      padding: 5px 24px;
+      font-weight: 600;
+      span {
+        img {
+          width: 20px;
+          height: 20px;
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// we can make this as a component
+.profileInfoSubmit {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-align: center;
+  button {
+    border: 0;
+    border-radius: 3px;
+    background-color: #00c2ff;
+    color: #fff;
+    padding: 10px 45px;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 768px) {
+  .stationSection {
+    padding: 0 10px;
+  }
+  .generateQrDiv {
+    text-align: center;
+    .generateQRBtn {
+      font-size: 18px;
+      padding: 12px 30px;
+      margin-bottom: 60px;
+      margin-top: 40px;
+    }
+  }
+  .addStationHeader {
+    img {
+      margin-right: 15px;
+      width: 25px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    .editBtn button {
+      font-size: 16px;
+      font-weight: 500;
+      padding: 5px 15px;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .addStationHeader img {
+    width: 25px;
+  }
+}

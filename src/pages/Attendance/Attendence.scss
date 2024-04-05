@@ -1,0 +1,72 @@
+.clearAll {
+  border-radius: 3px;
+  background-color: #f36f56;
+  color: white;
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 400;
+  width: max-content;
+  button {
+    border-radius: 3px;
+  }
+}
+.inActiveBtn button {
+  background-color: #ebebeb;
+  color: #4d4d4d;
+  font-size: 16.2px;
+  font-family: Poppins;
+  font-weight: 700;
+  border: 0;
+  width: max-content;
+  padding: 8px 15px;
+  button {
+    border-radius: 3px;
+  }
+}
+.attendance-section {
+  table {
+    tbody {
+      tr {
+        td {
+          padding: 20px 5px;
+        }
+      }
+    }
+  }
+}
+// @media (min-width: 768px) {
+//   .attendance-section {
+//     table {
+//       tbody {
+//         tr {
+//           &:nth-child(2n) {
+//             background-color: #edf9ff;
+//           }
+//           td:last-child {
+//             position: unset !important;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+@media (max-width: 860px) {
+  .startDateSec {
+    flex-direction: column;
+    .StartDate {
+      input {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 620px) {
+  .attendanceDateHeader {
+    flex-direction: column;
+    width: 100%;
+    .StartDate input {
+      width: 100%;
+    }
+  }
+}

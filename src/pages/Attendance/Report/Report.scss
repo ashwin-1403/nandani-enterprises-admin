@@ -1,0 +1,145 @@
+.reportHeaderSection {
+  .reportHead {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 3px #bae8ff solid;
+    padding: 26px 37px;
+    background-color: #fff;
+    margin-bottom: 50px;
+
+    .headContent {
+      flex: 1;
+      position: relative;
+
+      .printImageDiv {
+        text-align: center;
+        border: 4px solid #bae8ff;
+        border-radius: 50%;
+        height: 145px;
+        width: 145px;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        padding: 7px;
+        align-items: center;
+        margin-bottom: 0 !important;
+        img {
+          width: 100%;
+        }
+      }
+
+      div:first-child {
+        margin-bottom: 15px;
+      }
+
+      h6 {
+        color: black;
+        font-size: 15px;
+        font-family: Outfit;
+        font-weight: 200;
+        margin-bottom: 3px;
+      }
+
+      h5 {
+        color: black;
+        font-size: 20px;
+        font-family: Outfit;
+        font-weight: 600;
+      }
+    }
+  }
+}
+.detailImg {
+  border-radius: 50%;
+}
+
+@media (max-width: 450px) {
+  .reportHeaderSection {
+    .reportHead {
+      padding: 15px !important;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .reportHeaderSection {
+    .reportHead {
+      .headContent {
+        .printImageDiv {
+          height: 130px;
+          width: 130px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .reportHeaderSection {
+    .reportHead {
+      flex-direction: column;
+
+      .headContent {
+        margin-bottom: 15px;
+
+        &:first-child {
+          margin-bottom: 35px;
+          text-align: center;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        h5 {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 850px) and (max-width: 992px) {
+  .reportHeaderSection {
+    .reportHead {
+      padding: 26px 15px;
+
+      .headContent {
+        h5 {
+          font-size: 16px;
+          font-weight: 500;
+        }
+        .printImageDiv {
+          width: 130px;
+          height: 130px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+  .reportHeaderSection {
+    .reportHead {
+      padding: 25px 15px;
+
+      .headContent {
+        padding: 10px;
+
+        h5 {
+          font-weight: 500;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 850px) {
+  .reportHeaderSection .reportHead .headContent div:first-child {
+    min-height: 70px;
+    margin-bottom: 10px;
+  }
+}

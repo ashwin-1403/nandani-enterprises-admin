@@ -1,0 +1,89 @@
+.attendanceSearchBar {
+  .attendanceSearchContent {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    .attendanceFilter {
+      display: flex;
+      align-items: end;
+      .dropdown {
+        width: 150px;
+        label {
+          color: #4d4d4d;
+          font-family: Poppins;
+          font-size: 16px;
+          margin-bottom: 7px;
+          font-weight: 500;
+        }
+        button {
+          color: #4d4d4d;
+          font-weight: 400;
+          font-size: 16px;
+        }
+      }
+    }
+    .employeeAttendanceReportBtn {
+      button {
+        margin: 0;
+      }
+    }
+  }
+}
+.clearAllInactive {
+  .inActiveBtn {
+    border: 0;
+    background-color: #ebebeb;
+    color: black;
+    font-size: 16.2px;
+    font-family: Poppins;
+    font-weight: 700 !important;
+    padding: 8px 15px;
+    width: max-content;
+  }
+  .ActiveBtn {
+    color: white !important;
+    font-size: 16.2px;
+    font-family: Poppins;
+    font-weight: 700 !important;
+    background-color: #f36f56;
+    border: 0;
+    width: max-content;
+    padding: 8px 15px;
+  }
+}
+.tableWidth {
+  width: -webkit-fill-available;
+}
+@media (max-width: 520px) {
+}
+
+@media (max-width: 768px) {
+  .attendanceSearchBar {
+    .attendanceSearchContent {
+      align-items: flex-start;
+      .attendanceFilter {
+        flex-direction: column;
+        align-items: flex-start;
+        .dropdown {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .attendanceReportSec {
+    .employeeSearchSec {
+      justify-content: flex-start;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .attendanceSearchBar {
+    .attendanceSearchContent {
+      .clearAllInactive {
+        .inActiveBtn {
+          padding: 8px 30px;
+        }
+      }
+    }
+  }
+}

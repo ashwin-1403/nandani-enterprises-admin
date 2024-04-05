@@ -1,0 +1,63 @@
+.dashboard {
+  .employeeContentSec {
+    background-color: #fff;
+    // padding: 35px;
+    padding: 40px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+    border: 1px solid #00c2ff;
+    border-radius: 20px;
+    margin: 20px 30px;
+    .employeNumberHeading {
+      color: #4d4d4d;
+      font-size: 20px;
+      font-family: Poppins;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 25px;
+      // margin-bottom: 50px;
+    }
+    .employeeContent {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .employeeCount {
+        h1 {
+          color: #00c2ff;
+          // font-size: 70px;
+          font-family: Poppins;
+          font-weight: 600;
+        }
+      }
+    }
+    .moreInfoSec {
+      text-align: end;
+      position: relative;
+      button {
+        color: white;
+        font-size: 14px;
+        font-family: Poppins;
+        font-style: italic;
+        font-weight: 500;
+        border: 0;
+        background-color: #00c2ff;
+        border-radius: 18.5px;
+        padding: 8px 13px;
+        &:before {
+          content: "";
+          display: block;
+          width: 73%;
+          height: 2px;
+          background: #00c2ff;
+          left: 0;
+          opacity: 20%;
+          top: 50%;
+          position: absolute;
+        }
+        img {
+          padding-left: 7px;
+        }
+      }
+    }
+  }
+}

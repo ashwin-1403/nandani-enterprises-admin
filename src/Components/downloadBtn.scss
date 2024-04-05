@@ -1,0 +1,39 @@
+.downloadBtn {
+  button {
+    background-color: #444b8c !important;
+    padding: 7px 15px;
+    width: max-content;
+    margin: 0 10px;
+    img {
+      padding-right: 8px;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .downloadBtn button {
+    img {
+      padding-right: 0;
+    }
+    span {
+      display: none;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .downloadBtn button {
+    padding: 8px 11px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .downloadBtn {
+    button {
+      img {
+        padding-right: 0;
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+}

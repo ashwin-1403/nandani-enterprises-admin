@@ -1,0 +1,17 @@
+.modalBody {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.cropAndSaveBtn {
+  background-color: #00c2ff;
+  border-radius: 3px;
+  border: 0;
+  color: #fff;
+  font-size: 16.2px;
+  font-family: Poppins;
+  font-weight: 700;
+  padding: 8px 14px;
+  margin-right: 0;
+}
